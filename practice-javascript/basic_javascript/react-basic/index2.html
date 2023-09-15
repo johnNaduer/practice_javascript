@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mostrar Arreglo en React</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
+  <script type="text/javascript">
+    const ArregloApp = () => {
+      const arreglo1 = [1, 2, 3];
+      const elementos = [];
+
+      for (let i = 0; i < arreglo1.length; i++) {
+        elementos.push(React.createElement('p', { key: i }, arreglo1[i]));
+      }
+
+      return React.createElement('div', null, elementos);
+    };
+
+    ReactDOM.render(React.createElement(ArregloApp), document.getElementById('root'));
+  </script>
+</body>
+</html>
+

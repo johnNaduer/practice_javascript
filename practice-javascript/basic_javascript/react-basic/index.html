@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mostrar Arreglo en React</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+
+  <script type="text/babel">
+    const ArregloApp = () => {
+      const arreglo1 = [1, 2, 3];
+
+      return (
+        <div>
+          {arreglo1.map((elemento, index) => (
+            <p key={index}>{elemento}</p>
+          ))}
+        </div>
+      );
+    };
+
+    ReactDOM.render(<ArregloApp />, document.getElementById('root'));
+  </script>
+</body>
+</html>
+

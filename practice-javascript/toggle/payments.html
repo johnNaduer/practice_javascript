@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments</title>
+    <!-- Agrega los enlaces a los estilos de Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold mb-4">Centro de Pagos</h1>
+
+        <div class="bg-gray-100 p-4 rounded-lg mb-4">
+            <div class="flex items-center justify-between">
+                <h2 class="text-lg font-bold">Información del Usuario</h2>
+                <span class="text-gray-500">Saldo Disponible: $500.00</span>
+            </div>
+            <p class="text-gray-700 mt-2">Usuario: John Doe</p>
+            <p class="text-gray-700 mt-2">Opciones de Pago: Tarjeta de Crédito, Transferencia Bancaria</p>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg mb-4">
+            <h2 class="text-lg font-bold mb-2">Detalles de la Factura</h2>
+            <p class="text-gray-700"><strong>Número de Factura:</strong> INV-123456</p>
+            <p class="text-gray-700 mt-2"><strong>Descripción:</strong> Servicio de Suscripción</p>
+            <p class="text-gray-700 mt-2"><strong>Monto a Pagar:</strong> $49.99</p>
+        </div>
+
+        <form class="bg-white p-4 rounded-lg mb-4">
+            <h2 class="text-lg font-bold mb-2">Formulario de Pago</h2>
+            <div class="mb-4">
+                <label for="card-number" class="block text-gray-700">Número de Tarjeta</label>
+                <input type="text" id="card-number" class="border border-gray-300 px-3 py-2 rounded-md w-full">
+            </div>
+            <div class="mb-4">
+                <label for="expiration-date" class="block text-gray-700">Fecha de Vencimiento</label>
+                <input type="text" id="expiration-date" class="border border-gray-300 px-3 py-2 rounded-md w-full">
+            </div>
+            <div class="mb-4">
+                <label for="security-code" class="block text-gray-700">Código de Seguridad</label>
+                <input type="text" id="security-code" class="border border-gray-300 px-3 py-2 rounded-md w-full">
+            </div>
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Realizar Pago</button>
+        </form>
+
+        <div class="bg-green-100 p-4 rounded-lg mb-4">
+            <p class="text-green-700 font-bold">¡Pago realizado con éxito!</p>
+        </div>
+    </div>
+
+    <!-- Agrega el enlace al archivo de scripts de Tailwind CSS -->
+   
+    <!-- Agrega el enlace al archivo de scripts de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/2.2.19/tailwind.min.js"></script>
+</body>
+
+</html>
+
